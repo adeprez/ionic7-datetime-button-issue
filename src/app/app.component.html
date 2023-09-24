@@ -1,0 +1,14 @@
+<ion-app>
+  <ion-content>
+    <ng-container [ngTemplateOutlet]="tpl"></ng-container>
+
+    <ng-template #tpl>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="testId"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+      <ion-datetime-button datetime="testId"></ion-datetime-button>
+    </ng-template>
+  </ion-content>
+</ion-app>
